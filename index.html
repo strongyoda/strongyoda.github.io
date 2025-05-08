@@ -87,7 +87,7 @@
         return;
       }
 
-      const rsp = ((mmr - 1500) / 90) + ((winrate / 50) * 10) + ((rating - 7.1) * 2);
+      const rsp = ((mmr - 1500) / 90) + ((winrate / 60) * 10) + ((rating - 7.1) * 2);
 
       const adj50 = games >= 50 ? 1 : games / 50;
       const rsp50 = (rsp * adj50) + (13 * (1 - adj50));
